@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("images/hero.jpg") center/cover no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background: rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.navbar ul li a:hover {
+    color: #FFD54F;
+}
+
+.hero-content {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    max-width: 850px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin: 20px 0;
+    max-width: 650px;
+}
+
+/* Start Your Journey button/link */
+
+.journey-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #ff9800;
+    color: white;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.journey-btn:hover {
+    background: #ff5722;
+    transform: scale(1.05);
+}
+
+/* Normal buttons */
+
+button {
+    padding: 15px 35px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #ff5722;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    color: #0D47A1;
+}
+
+.feature-box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    width: 300px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    transition: .4s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 55px;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    padding: 80px 8%;
+    background: #eef5ff;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.gallery-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    transition: .4s;
+    width: 320px;
+}
+
+.gallery-card:hover {
+    transform: scale(1.05);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.gallery-card h3 {
+    padding: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0D47A1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* =========================
+   DESTINATIONS PAGE
+========================= */
+
+.destination-banner {
+    height: 300px;
+    background:
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url("images/hero.jpg") center/cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.destination-banner h1 {
+    font-size: 55px;
+}
+
+.destination-banner p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.destination-grid {
+    width: 90%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.destination-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    transition: .4s;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.content {
+    padding: 25px;
+}
+
+.content h2 {
+    color: #0D47A1;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.content button {
+    background: #ff9800;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.content button:hover {
+    background: #ff5722;
+}
+
+
+/* =========================
+   TRAVEL FORM PAGE
+========================= */
+
+.form-page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(13,71,161,.75), rgba(13,71,161,.75)),
+        url("images/hero.jpg") center/cover no-repeat;
+
+    padding: 40px 20px;
+}
+
+/* Form navigation */
+
+.form-navbar {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-navbar .logo {
+    color: white;
+}
+
+.back-home {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.back-home:hover {
+    background: white;
+    color: #0D47A1;
+}
+
+/* Form container */
+
+.form-container {
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
+}
+
+.form-container h1 {
+    text-align: center;
+    color: #0D47A1;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.form-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Form labels */
+
+.travel-form label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Text inputs */
+
+.travel-form input,
+.travel-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.travel-form input:focus,
+.travel-form textarea:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 0 3px rgba(255,152,0,.15);
+}
+
+.travel-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* Submit button */
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background: #ff5722;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        margin-top: 15px;
+    }
+
+    .navbar ul li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .destination-banner h1 {
+        font-size: 38px;
+    }
+
+    .destination-banner {
+        height: 220px;
+    }
+
+    .form-container {
+        padding: 25px 20px;
+    }
+
+    .form-container h1 {
+        font-size: 28px;
+    }
+
+    .form-navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
